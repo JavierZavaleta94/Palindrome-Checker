@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <title>Palindrome Checker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css"
+  </head>
+
+  <body>
+    <!-- title of the page -->
+    
+    <div class="title container-fluid">
+      <p>Palindrome Checker</p>
+    </div>
+
+    <!-- instructions and instruction button -->
+      <div class="instructions-section">
+
+        <div class="instructions-button container-fluid">
+          <button class="btn btn-danger" onclick="typeWriter()">Directions</button>
+        </div>
+        <div id="instructions">
+          <p></p>
+        </div>
+
+      </div>
+
+      <!-- submit input box, submit button and output display -->
+      <div class="submit-section container-fluid">
+
+        <div class="center">
+          <input id="input" class="form-control" placeholder="Insert word here...">
+          <button id="submit" class="btn btn-primary" onclick="palindrome()">Submit</button>
+        </div>
+        <div id="output">
+          <p></p>
+        </div>
+
+        <!-- Scripts -->
+        <script src="./JavaScript/Palindrome_Checker.js"></script>
+        <script src="./JavaScript/TypeWriter.js"></script>
+
+  </body>
+</html>
