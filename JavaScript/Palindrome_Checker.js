@@ -24,14 +24,15 @@ function palindrome(){
     for (var i = 0, len = palidromeMatch.length - 1; i < len / 2; i++) {
       //checks if the the first and last letter don't match to return false
       if (palidromeMatch[i] !== palidromeMatch[len - i]) {
-        answer = false;
+        answer = "FALSE";
         $(document).ready(function() {
           $("#output").css("color", "red");
         });
+        break;
       }
       //if the answer doesnt equate to false after going through the loop than it automatically takes the value of true
       else {
-        answer = true;
+        answer = "TRUE";
         $(document).ready(function() {
           $("#output").css("color", "springgreen");
         });
