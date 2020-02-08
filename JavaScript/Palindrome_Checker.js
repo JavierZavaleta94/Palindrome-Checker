@@ -18,6 +18,7 @@ function palindrome(){
       $("#output").css("color", "yellow");
     });
   }
+
   else {
     // loop that loops around the total length of input divided by half and checks if its match using symmetry
     for (var i = 0, len = palidromeMatch.length - 1; i < len / 2; i++) {
@@ -28,12 +29,14 @@ function palindrome(){
           $("#output").css("color", "red");
         });
       }
+      //if the answer doesnt equate to false after going through the loop than it automatically takes the value of true
+      else {
+        answer = true;
+        $(document).ready(function() {
+          $("#output").css("color", "springgreen");
+        });
+      }
     }
-    //if the answer doesnt equate to false after going through the loop than it automatically takes the value of true
-    answer = true;
-    $(document).ready(function() {
-      $("#output").css("color", "springgreen");
-    });
   }
     document.getElementById("output").innerHTML = answer;
   }
